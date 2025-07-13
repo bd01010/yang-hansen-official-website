@@ -1,0 +1,12 @@
+{
+  "name": "yang-hansen-website",
+  "version": "1.0.0",
+  "description": "Official website for Yang Hansen - Chinese Basketball Star",
+  "scripts": {
+    "dev": "echo 'This is a static site - open index.html in browser'",
+    "build": "echo 'No build required for static site'"
+  },
+  "keywords": ["yang hansen", "basketball", "nba", "portland trail blazers"],
+  "author": "Yang Hansen Official",
+  "license": "MIT"
+}
