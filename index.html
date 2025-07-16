@@ -24,10 +24,44 @@
     <meta name="twitter:url" content="https://yanghansenofficial.com/">
     <meta name="twitter:title" content="杨瀚森官方网站 | Yang Hansen Official">
     <meta name="twitter:description" content="中国篮球新星杨瀚森的官方网站">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data for Videos -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "杨瀚森最新视频",
+        "description": "杨瀚森 NBA 夏季联赛精彩集锦",
+        "itemListElement": [
+            {
+                "@type": "VideoObject",
+                "position": 1,
+                "name": "杨瀚森夏季联赛第3场 vs 灰熊",
+                "description": "杨瀚森在2025年7月15日NBA夏季联赛对阵孟菲斯灰熊队的精彩表现，15分3篮板2助攻",
+                "uploadDate": "2025-07-16",
+                "duration": "PT2M10S",
+                "embedUrl": "https://www.youtube.com/embed/h34RbUiPlE0",
+                "contentUrl": "https://www.youtube.com/watch?v=h34RbUiPlE0",
+                "thumbnailUrl": "https://img.youtube.com/vi/h34RbUiPlE0/maxresdefault.jpg"
+            },
+            {
+                "@type": "VideoObject",
+                "position": 2,
+                "name": "杨瀚森 2025年7月12日 比赛集锦",
+                "description": "杨瀚森在2025年7月12日NBA夏季联赛的精彩表现集锦，中文解说版",
+                "uploadDate": "2025-01-14",
+                "duration": "PT2M",
+                "embedUrl": "https://www.youtube.com/embed/ajMUApsgkI0",
+                "contentUrl": "https://www.youtube.com/watch?v=ajMUApsgkI0",
+                "thumbnailUrl": "https://img.youtube.com/vi/ajMUApsgkI0/maxresdefault.jpg"
+            }
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
@@ -107,18 +141,38 @@
         <div class="container">
             <h2 class="section-title">最新视频</h2>
             <div class="video-grid" id="videoGrid">
-                <!-- Videos will be loaded dynamically -->
-                <div class="video-placeholder">
-                    <div class="skeleton"></div>
-                    <div class="skeleton-text"></div>
+                <!-- Video 1: Summer League Game 3 -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/h34RbUiPlE0" 
+                            title="杨翰森 YANG HANSEN 夏季联赛第3场 vs 灰熊 | 开拓者胜利！"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>杨瀚森夏季联赛第3场 vs 灰熊</h3>
+                        <p>15分3篮板2助攻 | 中文解说 | 2025年7月15日</p>
+                    </div>
                 </div>
-                <div class="video-placeholder">
-                    <div class="skeleton"></div>
-                    <div class="skeleton-text"></div>
-                </div>
-                <div class="video-placeholder">
-                    <div class="skeleton"></div>
-                    <div class="skeleton-text"></div>
+                
+                <!-- Video 2: July 12 Game Highlights -->
+                <div class="video-item">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/ajMUApsgkI0" 
+                            title="杨瀚森 2025年7月12日 比赛集锦 | Yang Hansen July 12, 2025 Game Highlights"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>杨瀚森 2025年7月12日 比赛集锦</h3>
+                        <p>Yang Hansen July 12, 2025 Game Highlights | 中文解说</p>
+                    </div>
                 </div>
             </div>
             <div class="text-center">
@@ -200,6 +254,8 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/social.js"></script>
+    <script src="js/stats.js"></script>
 </body>
 </html>
